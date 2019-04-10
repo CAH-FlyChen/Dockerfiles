@@ -5,7 +5,7 @@
 # Base OS layer: Latest Ubuntu LTS.
 FROM microsoft/mssql-server-linux:2017-CU12
 
-VOLUME ["/d/VM/docker_data/mssql","/var/opt/mssql"]
+VOLUME ["/var/opt/mssql"]
 
 # Run SQL Server process.
 CMD [ "/opt/mssql/bin/sqlservr" ]
